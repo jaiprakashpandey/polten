@@ -1,0 +1,39 @@
+<!--<div class="container">
+  <table>
+    <row>
+      <column>Vehicle#</column>
+      <column>Status</column>
+      <column>CustomerName</column>
+    </row>
+  </table>
+
+</div>-->
+<div>
+  <div>
+    Vehicle Status Report, Total Vehicles: {{vehicleCount}}
+  </div>
+
+  <!-- <li *ngFor="let vehicle of vehicles">
+   <span class="badge">{{vehicle.vehicleId}}</span> {{vehicle.vehicleId}}
+
+   </li>-->
+  <table bgcolor="#f0f8ff" border="0">
+    <tr >
+      <th *ngFor="let vCol of vColumns">
+        {{vCol}}
+      </th>
+    </tr>
+    <tr *ngFor="let vehicle of vehicles">
+      <td>
+        {{vehicle.vehicleId}}
+      </td>
+      <td>
+        {{vehicle.status}}
+      </td>
+      <td>
+        {{vehicle.regNumber}}
+      </td>
+    </tr>
+  </table>
+</div>
+

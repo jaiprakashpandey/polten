@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-//import {IntegrationService} from './Integration.service';
-//import {Vehicle} from './Vehicle';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,6 +8,5 @@ export class AppComponent {
   title = 'Polten Vehicles AB';
 
  constructor(){}
-
 
 }

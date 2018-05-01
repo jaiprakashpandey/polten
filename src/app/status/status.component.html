@@ -1,24 +1,20 @@
-<!--<div class="container">
-  <table>
-    <row>
-      <column>Vehicle#</column>
-      <column>Status</column>
-      <column>CustomerName</column>
-    </row>
-  </table>
-
-</div>-->
 <div>
   <div>
-    Vehicle Status Report, Total Vehicles: {{vehicleCount}}
+    <table *ngIf="loadedFlag">
+      <tr>
+    <td>Total Vehicles: {{vehicleCount}} , </td>
+    <td>Filter by Status or Owner Id:</td>
+    <td><input matInput (keyup)="applyFilter($event.target.value)" placeholder="eg. dc or con or k123-83"></td>
+    </tr>
+    </table>
+
+
   </div>
-
-  <!-- <li *ngFor="let vehicle of vehicles">
-   <span class="badge">{{vehicle.vehicleId}}</span> {{vehicle.vehicleId}}
-
-   </li>-->
-  <table bgcolor="#f0f8ff" border="0">
-    <tr >
+  <div *ngIf="!loadedFlag">
+    Loading..........
+  </div>
+  <table id="vehstatus" *ngIf="loadedFlag">
+    <tr>
       <th *ngFor="let vCol of vColumns">
         {{vCol}}
       </th>
@@ -32,6 +28,15 @@
       </td>
       <td>
         {{vehicle.regNumber}}
+      </td>
+      <td>
+        {{vehicle.customerName}}
+      </td>
+      <td>
+        {{vehicle.ownerId}}
+      </td>
+      <td>
+        {{vehicle.custAddr}}
       </td>
     </tr>
   </table>

@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import {IntegrationService} from './integration.service';
 import { StatusComponent } from './status/status.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatButtonModule} from '@angular/material/button';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -15,12 +17,14 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    StatusComponent
+    StatusComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule
   ],
   providers: [IntegrationService],
   bootstrap: [AppComponent]

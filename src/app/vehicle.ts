@@ -3,4 +3,7 @@ export class Vehicle {
   regNumber: string;
   ownerId: string;
   status: string;
+  customerName: string;
+  custAddr: string;
+
 }

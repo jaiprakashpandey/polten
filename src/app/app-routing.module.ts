@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { IntegrationService } from './integration.service';
 import { StatusComponent } from './status/status.component';
+import {AdminComponent} from "./admin/admin.component";
 
 const routes: Routes = [
 {
@@ -12,7 +12,11 @@ component: HomeComponent
 {
 path:'status',
 component: StatusComponent
-}
+},
+  {
+    path:'admin',
+    component: AdminComponent
+  }
 ];
 
 @NgModule({

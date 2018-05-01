@@ -1,0 +1,22 @@
+#vehstatus {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#vehstatus td, #vehstatus th {
+  border: 1px solid #ddd;
+  padding: 2px;
+}
+
+#vehstatus tr:nth-child(even){background-color: #f2f2f2;}
+
+#vehstatus tr:hover {background-color: #ddd;}
+
+#vehstatus th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

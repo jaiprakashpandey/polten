@@ -35,6 +35,8 @@ export class StatusComponent implements OnInit {
         this.subscribeToData();
         this.vehicleCount = this.vehicles.length;
         this.loadedFlag = true;
+      }, error => {
+        console.log("error communicating server")
       }
     );
   }

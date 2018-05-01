@@ -1,17 +1,15 @@
-<div>
-  <div> <br/></div>
-  <div *ngIf="flag">
-    Please wait ,Task is in progress..........
-  </div>
-  <div *ngIf="msg!=''">
-    {{msg}}
-  </div>
-  <br></div>
-  <div *ngIf="!flag">
+<div><br/></div>
+<div *ngIf="flag">
+  Please wait ,Task is in progress..........
+</div>
+<div *ngIf="msg!=''">
+  {{msg}}
+</div>
+
+<div *ngIf="!flag">
   <li *ngFor="let task of tasks"
-      (click)="onSelect(task)" >
-    <span class="badge" >{{task}}</span>
+      (click)="onSelect(task)">
+    <span class="badge">{{task}}</span>
     <br/>
   </li>
-  </div>
 </div>

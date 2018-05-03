@@ -5,5 +5,5 @@ export class Vehicle {
   status: string;
   customerName: string;
   custAddr: string;
-
+  registrationDate: string;
 }

@@ -23,7 +23,10 @@
       <td>
         {{vehicle.vehicleId}}
       </td>
-      <td>
+      <td bgcolor="#32cd32" *ngIf="vehicle.status==='CON'">
+        {{vehicle.status}}
+      </td>
+      <td bgcolor="#cd5c5c" *ngIf="vehicle.status==='DC'">
         {{vehicle.status}}
       </td>
       <td>

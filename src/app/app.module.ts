@@ -26,7 +26,7 @@ import { AdminComponent } from './admin/admin.component';
     AppRoutingModule,
     MatButtonModule
   ],
-  providers: [IntegrationService],
+  providers: [IntegrationService,StatusComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

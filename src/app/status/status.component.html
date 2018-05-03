@@ -2,14 +2,14 @@
   <div>
     <table *ngIf="loadedFlag">
       <tr>
-    <td>Total Vehicles: {{vehicleCount}} , </td>
-    <td>Filter by Status or Owner Id:</td>
-    <td><input matInput (keyup)="applyFilter($event.target.value)" placeholder="eg. dc or con or k123-83"></td>
-    </tr>
+        <td>Total Vehicles: {{vehicleCount}} ,</td>
+        <td>Filter by Status or Owner Id:</td>
+        <td><input matInput (keyup)="applyFilter($event.target.value)" placeholder="eg. dc or con or k123-83"></td>
+        <td><a mat-raised-button appToggleFullscreen #fscreen >Fullscreen</a></td>
+      </tr>
     </table>
-
-
   </div>
+
   <div *ngIf="!loadedFlag">
     Loading..........
   </div>

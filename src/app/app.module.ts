@@ -10,6 +10,7 @@ import { StatusComponent } from './status/status.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import { AdminComponent } from './admin/admin.component';
+import { ToggleFullscreenDirective } from './toggle-fullscreen.directive';
 
 
 
@@ -18,13 +19,14 @@ import { AdminComponent } from './admin/admin.component';
     AppComponent,
     HomeComponent,
     StatusComponent,
-    AdminComponent
+    AdminComponent,
+    ToggleFullscreenDirective
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [IntegrationService,StatusComponent],
   bootstrap: [AppComponent]

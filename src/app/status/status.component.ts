@@ -11,6 +11,7 @@ import "rxjs/add/operator/first";
   styleUrls: ['./status.component.scss']
 })
 export class StatusComponent implements OnInit {
+
   vehicles: Vehicle[];
   vColumns: string[];
   vehicleCount: number;
@@ -19,11 +20,11 @@ export class StatusComponent implements OnInit {
   loadedFlag: boolean;
 
   constructor(private _int: IntegrationService) {
+
   }
 
   ngOnInit() {
     this.getStatus();
-
     this.vColumns = ["Vehicle Id", "Status", "Registration#", "Owner", "Owner Id", "Address"];
   }
 
